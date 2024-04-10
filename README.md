@@ -1,2 +1,2 @@
 # AutoResume
-An AI-powered service to beautify and proffesionalize resumes.
+An AI-powered service to beautify and professionalize resumes.
