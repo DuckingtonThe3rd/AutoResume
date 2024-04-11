@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>AutoResume</title>
 	<link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
-	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-	<link rel='stylesheet' type='text/css' href="style.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel='stylesheet' type='text/css' href="stylesheets/fonts.css">
+	<link rel='stylesheet' type='text/css' href="stylesheets/main.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar">
-		<div class="navdiv">
-			<div class="logo"><a href="">AutoResume</a> </div>
-			<ul>
-				<li><a href="index.html"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="img">
-		<img src="images/img1.png">
-	</div>
-	<div class="eyecatcher">
-		<h1>
-			Having trouble with your resume?
-		</h1>
-		<h2>
-			Don't worry. We're here to help.
-		</h2>
-		<p>
-			With our AI-powered service, you'll be landing your dream job in no time.
-		</p>
-	</div>
-	<div class="button">
-		<a href="#">Get Started</a>
+	<img class="backgroundImage" src="https://images.unsplash.com/photo-1452716726610-30ed68426a6b?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background">
+	<div class="pageWrapper">
+		<main>
+			<img src="images/wordmark.png" alt="AutoResume" class="wordmark invert">
+			<h1 class="josefin-sans-bold">Having trouble with your resume?</h1>
+			<h2 class="josefin-sans-light">Don't worry, we're here to help!</h2>
+			<div class="cardWrapper">
+				<div class="card">
+					<img src="icons/fast.svg" alt="Fast Icon" class="invert">
+					<h3 class="josefin-sans-bold">Fast</h3>
+				</div>
+				<div class="card">
+					<img src="icons/target.svg" alt="Target Icon" class="invert">
+					<h3 class="josefin-sans-bold">Accurate</h3>
+				</div>
+				<div class="card">
+					<img src="icons/chart-up.svg" alt="Chart Icon" class="invert">
+					<h3 class="josefin-sans-bold">Practical</h3>
+				</div>
+			</div>
+			<div class="callToActionButtons">
+				<button type="button" class="primaryButton">
+					<img src="icons/stars.svg" alt="Stars">
+					<div class="label josefin-sans-bold"> Get Started</div>
+				</button>
+				<button type="button" class="secondaryButton">
+					<img src="icons/info.svg" alt="Stars" class="invert">
+					<div class="label josefin-sans-bold"> Learn More</div>
+				</button>
+			</div>
+		</main>
 	</div>
 </body>
 </html>
