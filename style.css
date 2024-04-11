@@ -34,3 +34,7 @@ h2 {
 p {
     color: #ffffff; margin-left: 30px; font-size: 18; margin-top: -10px; font-weight: bold;
 }
+
+.button {
+    color: #000000; background-color: #ffffff; font-family: 'Plus Jakarta Sans'; padding-top: 15px; padding-bottom: 15px; padding-left: 30px;
+}
