@@ -1,0 +1,192 @@
+* {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #f0f0f0;
+    border-radius: 10px;
+    transition-timing-function: cubic-bezier(0.25, 0.84, 0.52, 1);
+}
+
+::-moz-selection {
+    color: white;
+    background: #444445;
+}
+    
+::selection {
+    color: white;
+    background: #444445;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    height: 100dvh;
+    background: #222225;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageWrapper {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .pageWrapper {
+        justify-content: center;
+    }
+}
+
+.backgroundImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    height: 100dvh;
+    filter: brightness(0.6) blur(5px);
+    -webkit-mask-image: linear-gradient(to left, transparent 30%, black);
+    mask-image: linear-gradient(to left, transparent 30%, black);
+    z-index: -1;
+}
+
+main {
+    width: 30em;
+    background: #ffffff12;
+    padding: 2.5em 4em;
+    box-shadow: 0px 2px 5px #00000026;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1,
+main h2 {
+    width: 75%;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main .wordmark {
+    width: 12.5em;
+    margin: 0;
+    margin-bottom: 2em;
+    align-self: center;
+    opacity: 0.4;
+}
+
+.cardWrapper {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1em;
+    align-self: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 730px) {
+    .cardWrapper {
+        display: none;
+    }
+    main {
+        padding: 2.5em;
+    }
+}
+
+.cardWrapper .card {
+    width: 100%;
+    background: #ffffff11;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardWrapper .card:hover {
+    background: #ffffff22;
+    transform: scale(1.025);
+}
+
+.cardWrapper .card img {
+    width: 2em;
+    opacity: 0.7;
+    margin-top: 1em;
+}
+
+.callToActionButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 75%;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 3em;
+    gap: 1em;
+}
+
+.callToActionButtons button {
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+    background: #ffffff33;
+}
+
+.callToActionButtons button.primaryButton {
+    background: #ffffffaa;
+}
+
+.callToActionButtons button.primaryButton:hover {
+    background: #ffffffcc;
+}
+
+.callToActionButtons button.primaryButton .label {
+    color: #222225;
+}
+
+.callToActionButtons button:hover {
+    transform: scale(1.1);
+    background: #ffffff55;
+}
+
+.callToActionButtons button:active {
+    transform: scale(0.95);
+}
+
+.callToActionButtons button .label {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.callToActionButtons button img {
+    width: 1.5em;
+    opacity: 0.8;
+}
+
+.invert {
+    filter: invert(1);
+}
