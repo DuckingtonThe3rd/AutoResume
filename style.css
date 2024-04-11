@@ -36,5 +36,8 @@ p {
 }
 
 .button {
-    color: #000000; background-color: #ffffff; font-family: 'Plus Jakarta Sans'; padding-top: 15px; padding-bottom: 15px; padding-left: 30px;
+    color: #000000; background-color: #ffffff; font-family: 'Plus Jakarta Sans'; padding-top: 15px; padding-bottom: 15px; margin-right: 90%; margin-left: 2%; text-align: center;
+}
+a {
+    color: #000000; background-color: #ffffff;
 }
