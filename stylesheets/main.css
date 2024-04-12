@@ -192,6 +192,11 @@ main .wordmark {
     opacity: 0.8;
 }
 
+.callToActionButtons a {
+    text-decoration: none;
+    width: 100%;
+}
+
 .invert {
     filter: invert(1);
 }
