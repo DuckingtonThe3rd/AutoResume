@@ -4,11 +4,11 @@ function sendMessage() {
     
     fetchOpenAIResponse(userInput)
       .then(response => {
-        appendMessage("ChatGPT: " + response);
+        appendMessage("AutoResume: " + response);
       })
       .catch(error => {
         console.error("Error:", error);
-        appendMessage("ChatGPT: Error processing message.");
+        appendMessage("AutoResume: Error processing message.");
       });
   
     document.getElementById("user-input").value = "";
