@@ -4,11 +4,11 @@ function sendMessage() {
     
     fetchOpenAIResponse(userInput)
       .then(response => {
-        appendMessage("AutoResume: " + response);
+        appendMessage("IntelliResume: " + response);
       })
       .catch(error => {
         console.error("Error:", error);
-        appendMessage("AutoResume: Error processing message.");
+        appendMessage("IntelliResume: Error processing message.");
       });
   
     document.getElementById("user-input").value = "";
