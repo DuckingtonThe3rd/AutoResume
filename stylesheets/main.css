@@ -200,3 +200,10 @@ main .wordmark {
 .invert {
     filter: invert(1);
 }
+
+.chat-box {
+    margin-top: 220%;
+    margin-bottom: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
