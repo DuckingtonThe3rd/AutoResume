@@ -208,3 +208,9 @@ main .wordmark {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+.popUpContainer {
+    top: 0;
+    left: 0;
+    position: fixed;
+}

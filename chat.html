@@ -19,6 +19,16 @@
             <input type="text" id="user-input" placeholder="Type your message...">
             <button onclick="sendMessage()" class="plus-jakarta-sans-regular">Send</button>
     </div>
+	<div class="popUpContainer">
+		<div class="popUp">
+		  <h1 class="popUpTitle">Title Here</h1>
+		  <p class="plus-jakarta-sans-regular popUpContent">Explain the reason for this pop up here</p>
+		  <div class="popUpButtons">
+			<button type="submit" class="popUpButton popUpButtonFalse" onclick="HidePopUp()" disabled>No</button>
+			<button type="submit" class="popUpButton popUpButtonTrue" onclick="HidePopUp()" disabled>Yes</button>
+		  </div>
+		</div>
+	  </div>
     <script src="chat.js"></script>
 </body>
 </html>
