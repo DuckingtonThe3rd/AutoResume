@@ -13,7 +13,7 @@ model = BertForSequenceClassification.from_pretrained('bert-base-uncased')
 train_encodings = tokenizer(casual_sentences, truncation=True, padding=True)
 val_encodings = tokenizer(professional_sentences, truncation=True, padding=True)
 
-class ResumeDataset(torch.utils.data.Dataset):
+class ResumeDataset(torch.utils.data.Dataset): # type: ignore
     def __init__(self, encodings, labels):
         self.encodings = encodings
         self.labels = labels
@@ -41,7 +41,7 @@ training_args = TrainingArguments(
 )
 
 trainer = Trainer(
-    model=model,
+    model=model, # type: ignore
     args=training_args,
     train_dataset=train_dataset,
     eval_dataset=val_dataset
@@ -51,7 +51,7 @@ trainer.train()
 
 def professionalize_sentence(sentence):
     inputs = tokenizer(sentence, return_tensors="pt")
-    outputs = model(**inputs)
+    outputs = model(**inputs) # type: ignore
     predicted_class = torch.argmax(outputs.logits, dim=1).item()
     return predicted_class
 
