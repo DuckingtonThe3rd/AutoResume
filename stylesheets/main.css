@@ -1,5 +1,5 @@
 * {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -51,8 +51,8 @@ body {
     height: 100vh;
     height: 100dvh;
     filter: brightness(0.6) blur(5px);
-    -webkit-mask-image: linear-gradient(to left, transparent 30%, black);
-    mask-image: linear-gradient(to left, transparent 30%, black);
+    -webkit-mask-image: linear-gradient(to left, transparent 30%, #0021a3);
+    mask-image: linear-gradient(to left, transparent 30%, #0021a3);
     z-index: -1;
 }
 
